@@ -1,0 +1,28 @@
+#include <cstdlib> 
+#include <iostream> 
+using namespace std; 
+int main(int argc, char *argv[]) 
+{ 
+    int a[7]; 
+    float srednia_rog=0;
+    int suma_rog=0;
+    int ile=0;
+    for(int i=0;i<=6;i++) 
+    { 
+    cout<<"podaj A["<<i<<"]="; 
+    cin>>a[i]; 
+    } 
+    cout<<"w tablicy A jest"<<"\n";
+     for(int i=0;i<=6;i++) 
+     { 
+             suma_rog=suma_rog+a[i];
+             ile++;
+             cout<<"w komorce A["<<i<<"]="<<a[i]<<"\n";
+      } 
+      srednia_rog=suma_rog/(1.0*ile);
+      cout<<"suma="<<suma_rog<<"\n";
+      cout<<"srednia="<<srednia_rog<<"\n";
+      
+      system("PAUSE");
+       return EXIT_SUCCESS; 
+       }
